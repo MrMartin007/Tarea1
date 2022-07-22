@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\categoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Rutas de curso: Ruta de Lista
+Route::get('/listaCategory', [categoryController::class,'listaCategory'])->name('listaCategory');
+
+
+//Ruta de Formulario Guardar
+Route::get('/formCategory', [categoryController::class,'formCategory']);
+
+//Ruta para Guardar al categoryController
+Route::post('/category/crearCategory', [categoryController::class,'guardarCategory'])->name('Category.save');
+
+//Ruta de Formulario Editar
+Route::get('/editformCategory/{id}', [categoryController::class,'editformCategory'])->name('editformCategory');
+
+//Ruta para Editar
+Route::patch('/editCategory/{id}', [categoryController::class, 'editCategory'])->name('editCategory');
+
+//Ruta para Eliminar
+Route::delete('/deleteCategory/{id}', [categoryController::class,'destroy'])->name('deleteCategory');
