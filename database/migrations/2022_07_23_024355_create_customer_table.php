@@ -19,7 +19,6 @@ class CreateCustomerTable extends Migration
             $table->string('addres');
             $table->string('phone_number');
             $table->timestamps();
-            $table->rememberToken();
 
         });
     }

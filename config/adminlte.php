@@ -228,24 +228,45 @@ return [
 
 
 
-
+        ['header' => ''],
         [
-            'text' => 'CATEGORY',
+            'text' => 'GitHub',
+            'url'  => 'https://github.com/MrMartin007/Tarea1.git',
             'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text'    => 'Categoria',
+            'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'Lista Categoria',
-                    'url'  => 'listaCategory',
-                ],
-
-                [
-                    'text' => 'Crear Categoria',
+                    'text' => 'Crear Category',
                     'url'  => '/formCategory',
                 ],
+                [
+                    'text' => 'Lista Category',
+                    'url'  => '/listaCategory',
 
+                        ],
+                    ],
+                ],
+        [
+            'text'    => 'Customer',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'Crear Customer',
+                    'url'  => '/formCustomer',
+                ],
+                [
+                    'text' => 'Lista Customer',
+                    'url'  => '/listaCustomer',
+
+                ],
             ],
         ],
     ],
+
+
 
     /*
     |--------------------------------------------------------------------------
