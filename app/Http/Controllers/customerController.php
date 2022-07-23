@@ -19,6 +19,7 @@ class customerController extends Controller
          ->where('name','LIKE','%'.$texto.'%')
          ->orwhere('addres','LIKE','%'.$texto.'%')
          ->orwhere('phone_number','LIKE','%'.$texto.'%')
+         ->orwhere('category.description','LIKE','%'.$texto.'%')
 
          ->paginate(10);
 

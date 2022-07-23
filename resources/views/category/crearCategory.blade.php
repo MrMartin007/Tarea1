@@ -30,7 +30,7 @@
                             <div class="form-row">
                                 <div class="col-md-5 mb-4 ">
                                     <label for="nombre" >Descripcion </label>
-                                    <input type="text" name="description" class="form-control" placeholder="holaa"  required>
+                                    <input type="text" name="description" class="form-control" placeholder="programacion 1"  required>
                                 </div>
                             </div>
 

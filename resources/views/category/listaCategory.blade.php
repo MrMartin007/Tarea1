@@ -11,7 +11,7 @@
     <div class="row justify-content-center">
         <div class="cold-md-11">
             <h1 class="text-center mb-5">
-                <i class="fas fa-user-graduate"> Categorias</i>
+                <i class="fa fa-list"> Categorias</i>
             </h1>
 
             <a class="btn btn-primary  mb-1" href="{{url('/formCategory')}}">
@@ -52,14 +52,14 @@
                                 <div class="btn-group">
 
                                     <a href="{{route('editformCategory', $categorys->id)}}" class="btn btn-primary mb-3 mr-2">
-                                        <i class="fas fa-pencil-alt"></i>
+                                        <i class="fas fa-pencil-alt"> Editar</i>
                                     </a>
 
                                     <form action="{{route('deleteCategory', $categorys->id)}}" method="POST" class="Alert-eliminar">
                                         @csrf @method('DELETE')
 
                                         <button type="submit" class="btn btn-danger">
-                                            <i class="fas fa-trash-alt"></i>
+                                            <i class="fas fa-trash-alt"> Eliminar</i>
                                         </button>
                                     </form>
                                 </div>

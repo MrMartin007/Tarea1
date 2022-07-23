@@ -35,18 +35,18 @@
 
                                 <div class="col-md-5 mb-4">
                                     <label for="addres" >Addres</label>
-                                    <input type="text" name="addres" class="form-control" placeholder="Garcia Mendoza"  required >
+                                    <input type="text" name="addres" class="form-control" placeholder="Pto. Barrios"  required >
                                 </div>
                             </div>
                             <div class="form-row  ">
 
                                 <div class="col-md-5 mb-4">
                                     <label for="phone_number"> Phone Number </label>
-                                    <input type="number" name="phone_number" class="form-control" placeholder="10"  required>
+                                    <input type="number" name="phone_number" class="form-control" placeholder="1234-2367"  required>
                                 </div>
                                 <div class="input-group col-md-5 mb-5 ">
                                     <label  class="input-group-text " for="inputGroupSelect01">CATEGORY</label>
-                                    <select name="category_id" class="form-select" id="inputGroupSelect01">
+                                    <select name="category_id" class="form-select" id="inputGroupSelect01" required>
                                         <option class="align-self-center text-center" > Seleccione </option>
 
                                         @foreach($category as $categorys)

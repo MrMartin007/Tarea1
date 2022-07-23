@@ -188,7 +188,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => '/',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -232,34 +232,38 @@ return [
         [
             'text' => 'GitHub',
             'url'  => 'https://github.com/MrMartin007/Tarea1.git',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fab fa-github',
         ],
         [
             'text'    => 'Categoria',
-            'icon'    => 'fas fa-fw fa-share',
+            'icon'    => 'fa fa-list-alt',
             'submenu' => [
                 [
                     'text' => 'Crear Category',
                     'url'  => '/formCategory',
+                    'icon'    => 'fa fa-plus',
                 ],
                 [
                     'text' => 'Lista Category',
                     'url'  => '/listaCategory',
+                    'icon'    => 'fa fa-clipboard-list',
 
                         ],
                     ],
                 ],
         [
             'text'    => 'Customer',
-            'icon'    => 'fas fa-fw fa-share',
+            'icon'    => 'fas fa-fw fa-user',
             'submenu' => [
                 [
                     'text' => 'Crear Customer',
                     'url'  => '/formCustomer',
+                    'icon'    => 'fa fa-user-plus',
                 ],
                 [
                     'text' => 'Lista Customer',
                     'url'  => '/listaCustomer',
+                    'icon'    => 'fa fa-list',
 
                 ],
             ],

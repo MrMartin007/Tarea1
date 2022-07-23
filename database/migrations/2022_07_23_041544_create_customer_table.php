@@ -23,6 +23,7 @@ class CreateCustomerTable extends Migration
         });
     }
 
+
     /**
      * Reverse the migrations.
      *
