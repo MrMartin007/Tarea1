@@ -14,7 +14,9 @@ use App\Http\Controllers\customerController;
 |
 */
 
-
+Route::get('/', function () {
+    return view('welcome');
+});
 
 //Rutas de curso: Ruta de Lista
 Route::get('/listaCategory', [categoryController::class,'listaCategory'])->name('listaCategory');
