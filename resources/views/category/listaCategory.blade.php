@@ -51,7 +51,7 @@
 
                                 <div class="btn-group">
 
-                                    <a href="{{route('editformCategory', $categorys->id)}}" class="btn btn-primary mb-3 mr-2">
+                                    <a href="{{route('editformCategory', $categorys->id)}}" class="btn btn-primary mr-3">
                                         <i class="fas fa-pencil-alt"> Editar</i>
                                     </a>
 
@@ -91,32 +91,28 @@
     <script> console.log('Hi!'); </script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!--Mensaje de Modificacion-->
     @if(session('categoryModificado')=='Modificado')
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'La categoria fue Modificado',
+                title: 'Categoria Modificado',
                 showConfirmButton: false,
                 timer: 1500
             })
         </script>
     @endif
 
-    <!--Mensaje de Guardado-->
     @if(session('categoriaGuardado')=='Guardado')
         <script>
             Swal.fire({
                 icon: 'success',
-                title: 'La categoria se Guardado',
+                title: 'Categoria Guardado',
                 showConfirmButton: false,
                 timer: 1500
             })
         </script>
     @endif
 
-
-    <!--Mensaje de Eliminado-->
     @if(session('categoryEliminado')=='Eliminado')
         <script>
             Swal.fire(

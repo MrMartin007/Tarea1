@@ -57,8 +57,8 @@
 
                                     <div class="btn-group">
 
-                                        <a href="{{route('editformCustomer', $customers->id)}}" class="btn btn-primary mb-3 mr-2">
-                                            <i class="fas fa-pencil-alt"> Editar</i>
+                                        <a href="{{route('editformCustomer', $customers->id)}}" class="btn btn-primary  mr-2">
+                                            <i class="fas fa-pencil-alt"> Editar </i>
                                         </a>
 
                                         <form action="{{route('deleteCustomer', $customers->id)}}" method="POST" class="Alert-eliminar">
@@ -97,7 +97,6 @@
     <script> console.log('Hi!'); </script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!--Mensaje de Modificacion-->
     @if(session('customerModificado')=='Modificado')
         <script>
             Swal.fire({
@@ -109,7 +108,6 @@
         </script>
     @endif
 
-    <!--Mensaje de Guardado-->
     @if(session('customeriaGuardado')=='Guardado')
         <script>
             Swal.fire({
@@ -121,8 +119,6 @@
         </script>
     @endif
 
-
-    <!--Mensaje de Eliminado-->
     @if(session('customerEliminado')=='Eliminado')
         <script>
             Swal.fire(
